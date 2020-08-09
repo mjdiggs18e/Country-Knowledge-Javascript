@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body ::-webkit-scrollbar {
+  width: 5px;
+}
+
+body ::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: #3bb3b3;
+}
+
+body {
+  color: #fff;
+  background: #040F0F;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.country-holder {
+  text-align: center;
+
+  h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 0 15px 0;
+  }
+
+  .tagline {
+    margin: 0 0 25px 0;
+  }
+
+  .country-input {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 15px 0;
+    
+
+    input {
+      outline: none;
+      border: none;
+      padding: .5rem;
+      height: 35px;
+      width: 200px;
+      color: #1c1c1c;
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    button {
+      outline: none;
+      border: none;
+      height: 35px;
+      padding: .5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      background: #164a4a;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .country-flag {
+    width: 60px;
+  }
+
+}
+
+.country-display {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .country-div {
+    background: #164a4a;
+    width: 300px;
+    padding: .5rem;
+    margin: 20px auto;
+    height: 70px;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    
+  }
+  
+}
+
+
+
+
+
+
+
+.loader {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+  position: relative;
+  color: #FFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: animloader 2s linear infinite;
+          animation: animloader 2s linear infinite;
+}
+
+@-webkit-keyframes animloader {
+  0% {
+    -webkit-box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+            box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+  }
+  25% {
+    -webkit-box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 2px;
+            box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 2px;
+  }
+  50% {
+    -webkit-box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 2px,  -38px 0 0 -2px;
+            box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 2px,  -38px 0 0 -2px;
+  }
+  75% {
+    -webkit-box-shadow: 14px 0 0 2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+            box-shadow: 14px 0 0 2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+  }
+  100% {
+    -webkit-box-shadow: 14px 0 0 -2px,  38px 0 0 2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+            box-shadow: 14px 0 0 -2px,  38px 0 0 2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+  }
+}
+
+@keyframes animloader {
+  0% {
+    -webkit-box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+            box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+  }
+  25% {
+    -webkit-box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 2px;
+            box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 2px;
+  }
+  50% {
+    -webkit-box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 2px,  -38px 0 0 -2px;
+            box-shadow: 14px 0 0 -2px,  38px 0 0 -2px,  -14px 0 0 2px,  -38px 0 0 -2px;
+  }
+  75% {
+    -webkit-box-shadow: 14px 0 0 2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+            box-shadow: 14px 0 0 2px,  38px 0 0 -2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+  }
+  100% {
+    -webkit-box-shadow: 14px 0 0 -2px,  38px 0 0 2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+            box-shadow: 14px 0 0 -2px,  38px 0 0 2px,  -14px 0 0 -2px,  -38px 0 0 -2px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
