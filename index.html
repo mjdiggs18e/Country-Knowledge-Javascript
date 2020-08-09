@@ -14,7 +14,10 @@
         <h1>Country Knowledge</h1>
         <p class="tagline">Enter a Countries Name to Get Information About That Particular Area</p>
         <div class="country-input">
-            <input type="text" class="countryName" placeholder="Enter a Country">
+            <input list="countries" class="countryName" id="countryName" placeholder="Enter a Country">
+            <datalist id="countries">
+
+            </datalist>
             <button type="submit" class="getCountry"><i class="fas fa-search"></i> Search</button>
         </div>
         <span class="error"></span>
